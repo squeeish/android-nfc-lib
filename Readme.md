@@ -25,6 +25,9 @@ In order to get a quick demo running you could perform the following steps :
 
 ``` groovy
     compile 'be.appfoundry:nfc-lib:1.1'
+    
+    // if you get an error like "Program type already present: org.intellij.lang.annotations.Identifier"
+    compile ('be.appfoundry:nfc-lib:1.1') { exclude group: 'com.intellij', module: 'annotations' }
 ```
 
 Now go to the created activity, and either
